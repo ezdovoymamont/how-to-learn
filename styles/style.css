@@ -14,6 +14,11 @@
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  display:flex;
+  position: relative;
+  background-color:#F2F2F2;
+  /*margin-bottom: 100px;
+  overflow:hidden;*/
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -28,4 +33,62 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.logo {
+  background-position: center;
+  background-size: contain;
+  background-image: url(../images/logo.svg);
+  background-repeat: no-repeat;
+}
+
+.header__logo {
+  width: 183px;
+  height: 32px;
+  order: 1;
+  left: 64px;
+  height: 32px;
+}
+
+
+
+
+
+.title{
+  width: 730px;
+  border: 1px solid red;
+}
+
+
+
+
+
+
+.footer__logo {
+  border: 1px solid red;
+  width: 145px;
+  height: 25px;
+  background-image: url(https://pictures.s3.yandex.net/logo_black.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-self: center;
+}
+
+.header__logo {
+  border: 1px solid red;
+  width: 183px;
+  height: 32px;
+  margin: 30px 65px;
+  background-image: url(https://pictures.s3.yandex.net/logo_black.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-self: center;
+}
+
+.flex-row{
+  display:flex;
+  justify-content:center;
+  margin: 0 65px;
 }
