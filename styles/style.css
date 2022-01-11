@@ -36,17 +36,21 @@
   height: 32px;
 }
 .header__title {
+  margin-top: 0;
+  margin-bottom: 0;
   position: relative;
   width: 730px;
   font-size: 102px;
   line-height: 96px;
-  left: 64px;
+  margin-left: 64px;
   font-weight: bold;
   align-self: center;
   z-index: 3;
   display: flex;
 }
 .header__subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
   position: absolute;
   bottom: 30px;
   left: 64px;
@@ -55,11 +59,12 @@
   font-size: 18px;
   font-weight: normal;
 }
-.link::after {
+.header__link::after {
   content:'\2192';
 }
-.link {
+.header__link {
   color:#2F80ED;
+  text-decoration: none;
 }
 .header__main-illustration {
   position: absolute;
@@ -67,8 +72,8 @@
   bottom: 0;
   width: 765px;
   height: 608px;
-  max-width: 50%;
-  z-index: 1;
+  /*max-width: 50%;*/
+  z-index: 2;
 }
 .header__square-pic {
   position: absolute;
@@ -93,11 +98,12 @@
   margin: 0;
   width: 80%;
   position: relative;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .two-columns__brief {
   margin-top: 0;
+  margin-bottom: 0;
   flex-basis: 175px;
   color: #2F80ED;
   line-height: 1.2;
@@ -117,6 +123,7 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  margin-bottom: 30px;
 }
 .two-columns__paragraph:last-of-type {
   margin-bottom: 0;
@@ -171,11 +178,12 @@
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
   margin-top: 0;
 }
 .table__text {
   margin-top: 20px;
+  margin-bottom: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -191,13 +199,14 @@
   background-repeat: no-repeat;
   background-size: 867px 637px;
   position: relative;
+  padding-top: 100px;
 }
 .feynmann__title {
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
   width: 648px;
-  margin-top: 100px;
+  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 70px;
@@ -218,13 +227,17 @@
   font-size: 36px;
   font-weight: normal;
   color: #2f80ed;
+  text-decoration: none;
+}
+.feynmann__link::after {
+  content:'\2192';
 }
 
 /*KAUFMAN*/
 
 .kaufman {
   color: white;
-  background-color:#000;
+  background-color:#1f1f1f;
   overflow: hidden;
   position: relative;
 }
@@ -233,7 +246,7 @@
   margin-bottom: 90px;
   z-index: 2;
 }
-.triangle  {
+.kaufman__triangle  {
   background-image: url(../images/kaufman-triangle.svg);
   width: 877px;
   height: 877px;
@@ -293,14 +306,13 @@
   background-color: #1f1f1f;
   box-sizing: border-box;
   color: white;
-  min-height: 350px;
+  min-height: 250px;
   padding: 60px 0 40px 0;
   margin: 0;
-  flex-basis: 711px;
 }
 .footer__columns {
   width: 90%;
-  min-height: 350px;
+  min-height: 250px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -311,11 +323,16 @@
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  padding-left: 0;
+  /* width: 50%; */
+  list-style-type: none;
+  text-decoration: none;
 }
 
-.footer__column_content-copyright {
+.footer__column_content_copyright {
   flex-shrink: 1;
+  flex-basis: 711px;
+  display: flex;
 }
 .logo_place_footer {
   background-image: url(../images/logo_place_footer.svg);
@@ -325,30 +342,35 @@
   position: absolute;
 }
 .footer__author {
+  display: flex;
+  align-self: flex-end;
   line-height: 25px;
   font-size: 18px;
   margin-bottom: 18px;
   margin-top: 18px;
   bottom: 0;
   left: 0;
-  position: absolute;
   color: white;
 }
 .footer__social-icons {
   width: 16px;
   height: 16px;
-  background-size: contain;
+  margin-right: 10px;
+  /*background-size: contain;*/
   position: relative;
+
 }
 .footer__column-links {
+  margin-top: 0;
   margin-bottom: 16px;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-  list-style-type: none;
-  padding-left: 0;
-  margin-left: 0;
+
+  text-decoration: none;
+  color: white;
 }
+
 .footer__column_content-social {
   margin-bottom: 16px;
   flex-shrink: 2;
@@ -366,18 +388,6 @@
   margin-top: 0;
   line-height: 30px;
   font-size: 18px;
-}
-.footer__content-social a:link {
-  color: white;
-}
-.footer__content-social a:visited {
-  color: white;
-}
-.footer__column-links a:link {
-  color: white;
-}
-.footer__column-links a:visited {
-  color: white;
 }
 
 
