@@ -1,0 +1,5 @@
+.footer__column_content_copyright {
+  flex-shrink: 1;
+  flex-basis: 711px;
+  display: flex;
+}
